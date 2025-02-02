@@ -1,77 +1,104 @@
 body {
-    background-color : rgb(174, 99, 243);
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(174, 99, 243);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 a {
-    color: pink;
+  color: pink;
 }
 
-.container{
-    margin: 120px auto;
-    max-width: 600px;
+.container {
+  margin: 120px auto;
+  max-width: 600px;
 }
 
-header{
-    margin-bottom: 30px;
+header {
+  margin-bottom: 30px;
 }
-
 
 h1 {
-    text-align: center;
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 1.5;
-    color: black;
+  text-align: center;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.5;
+  color: black;
 }
 
+.form-container {
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 6px 20px 60px rgba(65, 50, 100, 0.08);
+  padding: 15px 20px;
+}
 
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 0.6;
+  font-size: 12px;
+}
 
 form {
-    padding: 30px;
-    background-color:white;
-    box-shadow: 6px 20px 60px rgba(65,50,100, 0.08);
-    border-radius: 10px;
-    display: flex;
-    margin-bottom: 30px;
+  display: flex;
 }
 
 .instructions {
-    padding: 16px;
-    border: 1px solid rgba(39,33,66,0.5);
-    width: 80%;
-    font-size: 16px;
-    border-radius: 50px;
-    line-height: 20px;
-    color: black;
+  padding: 16px;
+  border: 1px solid rgba(39, 33, 66, 0.5);
+  width: 80%;
+  font-size: 16px;
+  border-radius: 50px;
+  line-height: 20px;
+  color: black;
 }
 
 .submit-button {
-    margin-left: 10px;
-    background-color: pink;
-    color: white;
-    border: none;
-    width: 150px;
-    font-size: 16px;
-    border-radius: 50px;
-    padding: 14px 24px;
+  margin-left: 10px;
+  background-color: pink;
+  color: white;
+  border: none;
+  width: 150px;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 14px 24px;
 }
 
 .poem {
-    font-size: 16px;
-    background-color: white;
-    padding: 20px;
-    line-height: 1.5;
-    border-left: 3px solid #885df1;
-    box-shadow: 0px 4px 30px 0px rgba(30,33,66, 0.03);
+  font-size: 16px;
+  background-color: white;
+  padding: 20px;
+  line-height: 1.5;
+  border-left: 3px solid #885df1;
+  box-shadow: 0px 4px 30px 0px rgba(30, 33, 66, 0.03);
+}
+
+.hidden {
+  display: none;
 }
 
 footer {
-    text-align: center;
-    font-size: 16px;
-    margin-top: 30px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 
 .poem strong {
-    color: blueviolet;
+  color: blueviolet;
 }
